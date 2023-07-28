@@ -1,12 +1,12 @@
 (ns space.matterandvoid.subscriptions.fulcro
-  (:require-macros [space.matterandvoid.subscriptions.fulcro])
+  ;; (:require-macros [space.matterandvoid.subscriptions.fulcro])
   (:require
-    [com.fulcrologic.fulcro.application :as fulcro.app]
-    [space.matterandvoid.subscriptions.impl.fulcro :as impl]
-    [space.matterandvoid.subscriptions.impl.subs :as impl.subs]
-    [space.matterandvoid.subscriptions.impl.reagent-ratom :as ratom]
-    [goog.object :as g]
-    ["react" :as react]))
+   [com.fulcrologic.fulcro.application :as fulcro.app]
+   [space.matterandvoid.subscriptions.impl.fulcro :as impl]
+   [space.matterandvoid.subscriptions.impl.subs :as impl.subs]
+   [space.matterandvoid.subscriptions.impl.reagent-ratom :as ratom]
+   [goog.object :as g]
+   ["react" :as react]))
 
 (defn set-memoize-fn! [f] (impl/set-memoize-fn! f))
 (defn set-args-merge-fn! [f] (impl/set-args-merge-fn! f))
