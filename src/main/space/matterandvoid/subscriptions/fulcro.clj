@@ -1,11 +1,11 @@
 (ns space.matterandvoid.subscriptions.fulcro
   (:require
-    [com.fulcrologic.fulcro.algorithm :as-alias fulcro.algo]
-    [com.fulcrologic.fulcro.application :as fulcro.app]
-    [space.matterandvoid.subscriptions :as-alias subs-keys]
-    [space.matterandvoid.subscriptions.impl.fulcro :as impl]
-    [space.matterandvoid.subscriptions.impl.reagent-ratom :as ratom]
-    [taoensso.timbre :as log]))
+   ;; [com.fulcrologic.fulcro.algorithm :as-alias fulcro.algo]
+   [com.fulcrologic.fulcro.application :as fulcro.app]
+   [space.matterandvoid.subscriptions :as-alias subs-keys]
+   [space.matterandvoid.subscriptions.impl.fulcro :as impl]
+   [space.matterandvoid.subscriptions.impl.reagent-ratom :as ratom]
+   [taoensso.timbre :as log]))
 
 (def query-key ::subs-keys/query)
 (defn set-memoize-fn! [f] (impl/set-memoize-fn! f))
